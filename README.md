@@ -7,13 +7,9 @@
 - Benjamín Celis
 - Matías Sáez
 
----
-
 ## Sistema Web Ferremas
 
 Este repositorio contiene el desarrollo completo del sistema Ferremas que hicimos para la evaluación 2 del ramo ASY5101. Usamos Java con Spring Boot para crear una API RESTful, conectada a una base de datos MySQL y documentada con Swagger. Todo el código está en la carpeta `miprimeraapi.zip`, y también subimos la base de datos, documentación y pruebas.
-
----
 
 ## Requisitos para ejecutar el sistema
 
@@ -27,14 +23,9 @@ Este repositorio contiene el desarrollo completo del sistema Ferremas que hicimo
 
 miprimeraapi_db
 
-yaml
-Copiar
-Editar
-
 > ⚠️ *No es necesario crear las tablas manualmente.*  
 > Cuando corras el proyecto con Spring Boot, se crean solas gracias a la configuración de Hibernate.
 
----
 
 ## Cómo abrir y ejecutar el sistema
 
@@ -47,9 +38,6 @@ Editar
 Ubicado en:  
 src/main/resources/application.properties
 
-bash
-Copiar
-Editar
 
 Debe tener esta configuración para conectarse con la base de datos local:
 
@@ -59,22 +47,6 @@ spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-yaml
-Copiar
-Editar
-
-> Si tienes contraseña en MySQL, debes ponerla en `spring.datasource.password`
-
----
-
-### 3. Ejecutar la aplicación
-
-- Ir a la clase:
-```java
-cl.duoc.miprimeraapi.MiprimeraapiApplication
-Hacer clic derecho y seleccionar "Run" o "Run Java Application"
-
-Esperar que inicie en el puerto 8080 (aparece como: Tomcat started on port 8080)
 
 Cómo probar los endpoints
 Swagger UI
